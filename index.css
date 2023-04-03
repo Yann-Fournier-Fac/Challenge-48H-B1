@@ -1,0 +1,79 @@
+#haut {
+    display: flex;
+    flex-direction: row;
+}
+
+
+#bouton-plugin {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+#bouton {
+    border: 0px;
+    background: rgba(0,0,0,0);
+    padding-top: 5px;
+    padding-bottom: 3px;
+}
+
+
+#bouton:hover{
+    background: rgba(0,0,0,0.2);
+    border-radius: 10%;
+}
+
+
+#image {
+    border: 0px;
+    height: 25px;
+    width: 25px;
+}
+
+#plugin {
+    /* we will toggle then the display of the end-menu */
+    display: none;
+    margin: 50px auto;
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 1000;
+}
+
+
+#titre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    font-size: 50px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#tit-princ {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 55px;
+    font-family: 'Delicious Handrawn', cursive;
+}
+
+#tit {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 35px;
+    font-family: 'Delicious Handrawn', cursive;
+}
+
+#info {
+    margin-top: 0px;
+    margin-bottom: 25px;
+    font-family: 'Fasthand', cursive;
+}
