@@ -78,6 +78,10 @@
     margin-bottom: 20px;
 }
 
+#text {
+
+    text-align: center;
+}
 #tit-princ {
     margin-top: 0px;
     margin-bottom: 0px;

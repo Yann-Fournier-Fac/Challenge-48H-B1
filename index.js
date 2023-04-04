@@ -12,11 +12,11 @@ document.getElementById('bouton-croix').addEventListener('click', function() {
 document.getElementById('bouton-save').addEventListener('click', function() {
     var taille = document.getElementById("input-taille").value;
     var type = document.getElementById("input-type").value;
-    document.getElementById("tit-princ").style = "font-family: " + type + ", Helvetica, sans-serif; font-size:" +taille +";";
-    document.getElementById("tit1").style = "font-family: " + type + ", Helvetica, sans-serif; font-size:" +taille +";";
-    document.getElementById("info1").style = "font-family: " + type + ", Helvetica, sans-serif; font-size:" +taille +";";
-    document.getElementById("tit2").style = "font-family: " + type + ", Helvetica, sans-serif; font-size:" +taille +";";
-    document.getElementById("info2").style = "font-family: " + type + ", Helvetica, sans-serif; font-size:" +taille +";";
+    document.getElementById("tit-princ").style = "font-family: " + type + ", Helvetica, sans-serif; font-size:" +taille  +"px;";
+    document.getElementById("tit1").style = "font-family: " + type + ", Helvetica, sans-serif; font-size:" +taille +"px;";
+    document.getElementById("info1").style = "font-family: " + type + ", Helvetica, sans-serif; font-size:" +taille +"px;";
+    document.getElementById("tit2").style = "font-family: " + type + ", Helvetica, sans-serif; font-size:" +taille +"px;";
+    document.getElementById("info2").style = "font-family: " + type + ", Helvetica, sans-serif; font-size:" +taille +"px;";
     document.getElementById('plugin').style.display = 'none';
 });
 
@@ -25,7 +25,7 @@ document.getElementById('bouton-save').addEventListener('click', function() {
 let Carte = true;
 
 let div_img = document.getElementById("images");
-div_img.style = "display : flex; flex_direction: row;";
+div_img.style = "display : flex; flex_direction: row;margin-bottom:20px";
 
 let image = document.createElement("img");
 image.src = "./images/Carteroute41.png";
@@ -45,8 +45,8 @@ div_img.appendChild(inter_div1);
 
 
 let desc = document.createElement("p");
-desc.innerHTML = "Voici une carte représentant les routes du Loir-et-Cher";
-desc.style = "height : 400px;width : 400px; z-index = 100; display:none;";
+desc.innerHTML = "Voici une carte représentant les routes du Loir-et-Cher. On peut voir en haut à droit la ville d'Orléans reliée au nord par une autoroute. Cette autoroute traverse Orléans et descend au sud jusqu'à Merzon ou elle se sépare en deux. Orléans est aussi reliée a Tours, se trouvant en bas a gauche de l'image, par une autoroute. Les villes de Tours et Merzon sont quant à elles reliées par une route departementale.";
+desc.style = "height : 400px;width : 400px; z-index = 100; display:none;font-size : 55px";
 
 let inter_div2 = document.createElement("div");
 inter_div2.style = "z-index = 100; display:none;";
@@ -75,24 +75,5 @@ document.getElementById('toCarte').addEventListener('click', function() {
     image.style = "height : 400px;width : 400px; z-index = 200; display:block;"
     inter_div1.style = "display : block;"
 });
-// document.getElementById('buton').addEventListener('click', function() {
-//    // Carte et sa déscription
-//    if (!Carte) {
-//     div_img.removeChild(desc);
-//     div_img.removeChild(inter_div2);
 
-//     div_img.appendChild(image);
-//     div_img.appendChild(inter_div1);
-
-//     Carte = true;
-//    } else if (Carte){
-//     div_img.removeChild(image);
-//     div_img.removeChild(inter_div1);
-
-//     div_img.appendChild(desc);
-//     div_img.appendChild(inter_div2);
-
-//     Carte = false;
-//    }
-// })
 
